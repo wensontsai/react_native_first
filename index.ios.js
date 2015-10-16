@@ -37,7 +37,7 @@ var DeepThoughts = React.createClass({
       .then((responseData) => {
         // this.setState() will cause the new data to be applied to the UI that is created by the `render` function below
         this.setState({
-          thought: { title: responseData[0].title.rendered, content: responseData[0].content.plaintext }
+          thought: { title: responseData[0].title.rendered, content: responseData[0].plaintext }
         });
       })
       .done();
@@ -111,7 +111,7 @@ var styles = StyleSheet.create({
     paddingLeft: 20,
     paddingRight: 20,
     textAlign: 'center',
-    color: '#333333',
+    color: 'gray',
     marginBottom: 5,
   },
   buttonContainer: {
@@ -127,7 +127,7 @@ var styles = StyleSheet.create({
   },
   buttonText: {
     fontSize: 30,
-    color: '#666666',
+    color: 'red',
   },
 });
 
